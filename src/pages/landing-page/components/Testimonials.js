@@ -95,11 +95,15 @@ export default function Testimonials() {
           Testimonials
         </Typography>
         <Typography variant="body1" color="text.secondary">
-          See what our candidates love about us. Discover how we excel
-          in efficiency and satisfaction. Join us for discovering new opportunities.
+          See what our candidates love about us. Discover how we excel in
+          efficiency and satisfaction. Join us for discovering new
+          opportunities.
         </Typography>
       </Box>
-      <Grid container spacing={2}>
+      <Typography variant="body1" color="text.secondary">
+        Coming soon...!
+      </Typography>
+      {/* <Grid container spacing={2}>
         {userTestimonials.map((testimonial, index) => (
           <Grid item xs={12} sm={6} md={4} key={index} sx={{ display: "flex" }}>
             <Card
@@ -138,7 +142,7 @@ export default function Testimonials() {
             </Card>
           </Grid>
         ))}
-      </Grid>
+      </Grid> */}
     </Container>
   );
 }

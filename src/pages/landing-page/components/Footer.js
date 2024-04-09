@@ -11,7 +11,12 @@ import NihonLogo3 from "./../../../images/NihinLogo3.png";
 import NihonLogo2 from "./../../../images/NihinLogo2.png";
 import FacebookIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import LocationIcon from "@mui/icons-material/LocationCity";
 import TwitterIcon from "@mui/icons-material/X";
+import NihonLogoMain from "../../../images/NihonLogoMain.png";
+import PhoneIcon from "@mui/icons-material/Phone";
+import MailIcon from "@mui/icons-material/Email";
+import { Email, Phone } from "@mui/icons-material";
 
 const logoStyle = {
   width: "140px",
@@ -22,7 +27,7 @@ function Copyright() {
   return (
     <Typography variant="body2" color="text.secondary" mt={1}>
       {"Copyright © "}
-      <Link href="https://mui.com/">NNN&nbsp;</Link>
+      <Link href="#">NNN&nbsp;</Link>
       {new Date().getFullYear()}
     </Typography>
   );
@@ -58,17 +63,64 @@ export default function Footer() {
           }}
         >
           <Box sx={{ width: { xs: "100%", sm: "60%" } }}>
-            <Box sx={{ ml: "-15px" }}>
+            <Box
+              sx={{
+                ml: "-15px",
+              }}
+            >
               <img
-                src={NihonLogo2}
-                style={{ ...logoStyle, height: 60, width: 60 }}
+                src={NihonLogoMain}
+                style={{ ...logoStyle, height: 150, width: 150 }}
                 alt="logo of nihon"
               />
-              <img src={NihonLogo3} style={logoStyle} alt="logo of nnn" />
+            </Box>
+            <Box
+              sx={{
+                ml: "-15px",
+              }}
+            >
+              <Typography variant="h5" gutterBottom fontWeight={600}>
+                Contact us
+              </Typography>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  padding: 7,
+                }}
+              >
+                <LocationIcon style={{ marginRight: 5 }} />
+                <Typography color="text.secondary">
+                  Smriti Nagar, Bhilai , CG, India
+                </Typography>
+              </div>
+
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  padding: 7,
+                }}
+              >
+                <Phone style={{ marginRight: 5 }} />
+                <Typography color="text.secondary">+91 98278 89143</Typography>
+              </div>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  padding: 7,
+                }}
+              >
+                <Email style={{ marginRight: 5 }} />
+                <Typography color="text.secondary">
+                  nihonnaukrinavigator@gmail.com
+                </Typography>
+              </div>
             </Box>
           </Box>
         </Box>
-        <Box
+        {/* <Box
           sx={{
             display: { xs: "none", sm: "flex" },
             flexDirection: "column",
@@ -76,7 +128,7 @@ export default function Footer() {
           }}
         >
           <Typography variant="body2" fontWeight={600}>
-            Product
+            Short Links
           </Typography>
           <Link color="text.secondary" href="#">
             Features
@@ -90,47 +142,7 @@ export default function Footer() {
           <Link color="text.secondary" href="#">
             FAQs
           </Link>
-        </Box>
-        <Box
-          sx={{
-            display: { xs: "none", sm: "flex" },
-            flexDirection: "column",
-            gap: 1,
-          }}
-        >
-          <Typography variant="body2" fontWeight={600}>
-            Company
-          </Typography>
-          <Link color="text.secondary" href="#">
-            About us
-          </Link>
-          <Link color="text.secondary" href="#">
-            Careers
-          </Link>
-          <Link color="text.secondary" href="#">
-            Press
-          </Link>
-        </Box>
-        <Box
-          sx={{
-            display: { xs: "none", sm: "flex" },
-            flexDirection: "column",
-            gap: 1,
-          }}
-        >
-          <Typography variant="body2" fontWeight={600}>
-            Legal
-          </Typography>
-          <Link color="text.secondary" href="#">
-            Terms
-          </Link>
-          <Link color="text.secondary" href="#">
-            Privacy
-          </Link>
-          <Link color="text.secondary" href="#">
-            Contact
-          </Link>
-        </Box>
+        </Box> */}
       </Box>
       <Box
         sx={{
@@ -165,15 +177,7 @@ export default function Footer() {
         >
           <IconButton
             color="inherit"
-            href="https://github.com/mui"
-            aria-label="GitHub"
-            sx={{ alignSelf: "center" }}
-          >
-            <FacebookIcon />
-          </IconButton>
-          <IconButton
-            color="inherit"
-            href="https://twitter.com/MaterialUI"
+            href="#"
             aria-label="X"
             sx={{ alignSelf: "center" }}
           >
@@ -181,7 +185,7 @@ export default function Footer() {
           </IconButton>
           <IconButton
             color="inherit"
-            href="https://www.linkedin.com/company/mui/"
+            href="https://www.linkedin.com/company/nihonnaukrinavigator"
             aria-label="LinkedIn"
             sx={{ alignSelf: "center" }}
           >

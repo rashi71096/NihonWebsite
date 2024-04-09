@@ -171,7 +171,7 @@ export default function Features() {
                           event.stopPropagation();
                         }}
                       >
-                        <span>Learn more</span>
+                        <span>Explore</span>
                         <ChevronRightRoundedIcon
                           fontSize="small"
                           sx={{ mt: "1px", ml: "2px" }}

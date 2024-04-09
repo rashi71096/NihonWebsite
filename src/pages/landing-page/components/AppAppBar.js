@@ -130,7 +130,6 @@ function AppAppBar({ mode, toggleColorMode }) {
                     Testimonials
                   </Typography>
                 </MenuItem>
-                {/* testimonials */}
                 <MenuItem
                   onClick={() => scrollToSection("contact")}
                   sx={{ py: "6px", px: "12px" }}
@@ -177,10 +176,10 @@ function AppAppBar({ mode, toggleColorMode }) {
                       flexGrow: 1,
                     }}
                   >
-                    <ToggleColorMode
+                    {/* <ToggleColorMode
                       mode={mode}
                       toggleColorMode={toggleColorMode}
-                    />
+                    /> */}
                   </Box>
                   <MenuItem onClick={() => scrollToSection("features")}>
                     About us
@@ -191,16 +190,11 @@ function AppAppBar({ mode, toggleColorMode }) {
                   <MenuItem onClick={() => scrollToSection("highlights")}>
                     Services
                   </MenuItem>
-                  <MenuItem onClick={() => scrollToSection("faq")}>
-                    FAQ
+                  <MenuItem onClick={() => scrollToSection("testimonials")}>
+                    Testimonials
                   </MenuItem>
-                  <MenuItem
-                    onClick={() => scrollToSection("contact")}
-                    sx={{ py: "6px", px: "12px" }}
-                  >
-                    <Typography variant="body2" color="text.primary">
-                      Contact
-                    </Typography>
+                  <MenuItem onClick={() => scrollToSection("contact")}>
+                    Contact
                   </MenuItem>
                 </Box>
               </Drawer>
